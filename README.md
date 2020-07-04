@@ -1,5 +1,6 @@
 <h2>Image Steganography</h2>
-<img src="https://forthebadge.com/images/badges/built-by-developers.svg"> <img src="https://forthebadge.com/images/badges/built-with-science.svg"> <img src="https://forthebadge.com/images/badges/made-with-python.svg">
+<img src="https://img.shields.io/badge/Build%20With-Python-yellow">
+<img src="https://img.shields.io/badge/Built%20With-openssl-yellow">
 
 This is a project on Information cryptography and Image Steganogrphy. It can take as input a message and a raw image to make the final image, after performing Image Steganography. Or it can generate the encrypted mesage from the steganographed image.
 <hr>
