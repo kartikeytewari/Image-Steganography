@@ -9,12 +9,11 @@ This is a project on Information cryptography and Image Steganogrphy. It can tak
 
 The tech stack used is:
 <ul>
-    <li> Bash Script </li>
+    <li> Python3 </li>
+    <li> Python Imaging Library (PIL) </li>
     <li> openssl </li>
     <li> Advanced Encryption Standard (AES) (Rijndael) </li>
     <li> Cipher Block Chaining (CBC) </li>
-    <li> Python3 </li>
-    <li> Python Imaging Library (PIL) </li>
 </ul>
 
 Steps to install the software:
