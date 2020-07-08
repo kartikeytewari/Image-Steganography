@@ -25,15 +25,16 @@ Steps to install the software:
 Steps to encrypt message and embed it in an image:
 <ul>
     <li> In the Image folder, store the raw host image as raw.jpg </li>
-    <li> Run the script main.py. It will ask for the payload message and then encrypt it using openssl's implementation of aes-256-cbc algorithm. Then it will embed the data in the raw image. </li>
-    <li> The final image will be stored as enc.jpg in the Image folder </li>
-    <li> Make sure to transfer the image uncompresed, otherwise the data will be lost irreocably. </li>
+    <li> To encrypt the message using openssl aes-256-cbc encryption run the command auto.sh </li>
+    <li> The encrypted data will be stored in .enc_data_base64.txt file </li>
+    <li> Run python3 main.py command to start encode-decode process </li>
 </ul>
 
 Steps to decrypt the message from the image:
 <ul>
     <li> Store the image as enc.jpg in the Image folder. </li>
-    <li> Run the main.py sript for getting the data. </li>
+    <li> Run python3 main.py to decode the message. </li>
+    <li> If it is encrypted then store it in .enc_data_base64.txt file and run auto.sh file, to decrypt it. </li>
 </ul>
 
 For queries/suggestions about feature improvement fell free to ping the developer at kartikeya30@gmail.com
