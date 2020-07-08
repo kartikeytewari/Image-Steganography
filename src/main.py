@@ -76,7 +76,7 @@ def encode_enc(newimg, data):
 def encode(): 
 	image = Image.open("../Image/raw.png", 'r') 
 	
-	data = ".end_data_binary.txt"
+	data = input("Enter data to be encoded : ") 
 	if (len(data) == 0): 
 		raise ValueError('Data is empty') 
 		
@@ -111,7 +111,15 @@ def decode():
 			
 # Main Function		 
 def main(): 
-	decode()
+	a = int(input(":: Welcome to Steganography ::\n"
+						"1. Encode\n 2. Decode\n")) 
+	if (a == 1): 
+		encode() 
+		
+	elif (a == 2): 
+		print("Decoded word- " + decode()) 
+	else: 
+		raise Exception("Enter correct input") 
 		
 # Driver Code 
 if __name__ == '__main__' : 
