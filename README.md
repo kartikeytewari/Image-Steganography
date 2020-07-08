@@ -4,7 +4,7 @@
     <img src="https://img.shields.io/badge/Built%20With-openssl-yellow">
 </p>
 
-This is a project on Information cryptography and Image Steganogrphy. It can take as input a message and a raw image to make the final image, after performing Image Steganography. Or it can generate the encrypted mesage from the steganographed image.
+This is a project on Information cryptography and Image Steganography. It can take as input a message and a raw image to make the final image, after performing Image Steganography. Or it can generate the encrypted mesage from the steganographyed image.
 <hr>
 
 The tech stack used is:
@@ -24,7 +24,7 @@ Steps to install the software:
 
 Steps to encrypt message and embed it in an image:
 <ul>
-    <li> In the Image folder, store the raw host image as raw.jpg </li>
+    <li> In the Image folder, store the raw host image as raw.png </li>
     <li> To encrypt the message using openssl aes-256-cbc encryption run the command auto.sh </li>
     <li> The encrypted data will be stored in .enc_data_base64.txt file </li>
     <li> Run python3 main.py command to start encode-decode process </li>
