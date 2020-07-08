@@ -74,8 +74,7 @@ def encode_enc(newimg, data):
 			
 # Encode data into image 
 def encode(): 
-	img = input("Enter image name(with extension): ") 
-	image = Image.open(img, 'r') 
+	image = Image.open("./Image/raw.png", 'r') 
 	
 	data = input("Enter data to be encoded : ") 
 	if (len(data) == 0): 
@@ -84,14 +83,11 @@ def encode():
 	newimg = image.copy() 
 	encode_enc(newimg, data) 
 	
-	new_img_name = input("Enter the name of new image(with extension): ") 
-	# newimg.save(new_img_name, str(new_img_name.split(".")[1].upper())) 
-	newimg.save(new_img_name)
+	newimg.save("./Image/enc.png")
 
 # Decode the data in the image 
 def decode(): 
-	img = input("Enter image name(with extension) :") 
-	image = Image.open(img, 'r') 
+	image = Image.open("./Image/enc.png", 'r') 
 	
 	data = '' 
 	imgdata = iter(image.getdata()) 
